@@ -15,18 +15,18 @@ export default function BeforeAfterSlider({ before, after, title, description }:
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Custom image positioning based on vehicle
+  // Custom image positioning based on vehicle - AGGRESSIVE POSITIONING
   const getImageStyle = () => {
     if (title.includes('Porsche 911')) {
-      return { objectPosition: 'center 35%' }; // Push up to show more of the car
+      return { objectPosition: 'center 20%' }; // VERY aggressive - show cars prominently
     }
     if (title.includes('Mustang Fastback')) {
-      return { objectPosition: 'center 35%' }; // Push up to show more of the car
+      return { objectPosition: 'center 20%' }; // VERY aggressive - show cars prominently
     }
     if (title.includes('Camaro SS')) {
-      return { objectPosition: 'center 30%', transform: 'scale(0.85)' }; // Zoom out slightly and push up
+      return { objectPosition: 'center 18%', transform: 'scale(0.85)' }; // Extra aggressive + zoom out
     }
-    return { objectPosition: 'center center' }; // Default
+    return { objectPosition: 'center 30%' }; // Default for Bronco
   };
 
   const handleMove = (clientX: number) => {
@@ -67,7 +67,7 @@ export default function BeforeAfterSlider({ before, after, title, description }:
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-100px' }}
-      className="relative w-full aspect-video rounded-2xl overflow-hidden group shadow-2xl"
+      className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden group shadow-2xl"
     >
       <div
         ref={containerRef}
