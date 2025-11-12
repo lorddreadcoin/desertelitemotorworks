@@ -15,19 +15,21 @@ export default function DesertEliteMotorworks() {
       <nav className="fixed w-full z-50 bg-black/95 backdrop-blur-md py-4 border-b border-zinc-800">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
-              <div className="w-6 h-6 border-2 border-black rounded"></div>
-            </div>
+            <img 
+              src="/images/logo.png" 
+              alt="Desert Elite Motorworks" 
+              className="w-12 h-12 object-contain"
+            />
             <div>
               <div className="text-lg font-bold">DESERT ELITE</div>
               <div className="text-xs text-amber-400 tracking-widest">MOTORWORKS</div>
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-6 text-sm">
-            <a href="#services" className="hover:text-amber-400">Services</a>
-            <a href="#credentials" className="hover:text-amber-400">Credentials</a>
-            <a href="#reviews" className="hover:text-amber-400">Reviews</a>
-            <a href="tel:+17608998244" className="bg-amber-500 hover:bg-amber-600 text-black px-6 py-2 rounded-full font-semibold">
+            <a href="#services" className="hover:text-amber-400 transition-colors">Services</a>
+            <a href="#credentials" className="hover:text-amber-400 transition-colors">Credentials</a>
+            <a href="#reviews" className="hover:text-amber-400 transition-colors">Reviews</a>
+            <a href="tel:+17608998244" className="bg-amber-500 hover:bg-amber-600 text-black px-6 py-2 rounded-full font-semibold transition-all">
               (760) 899-8244
             </a>
           </div>

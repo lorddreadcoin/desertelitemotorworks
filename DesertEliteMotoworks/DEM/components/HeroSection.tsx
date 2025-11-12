@@ -12,6 +12,20 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-br from-black via-zinc-900 to-black">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent" />
         
+        {/* Logo Watermark - Behind Text */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 0.08, scale: 1 }}
+          transition={{ duration: 2, delay: 0.5 }}
+          className="absolute inset-0 flex items-center justify-center pointer-events-none"
+        >
+          <img 
+            src="/images/logo.png" 
+            alt="Desert Elite Motorworks" 
+            className="w-[800px] h-auto object-contain"
+          />
+        </motion.div>
+        
         {/* Animated grid pattern */}
         <motion.div
           className="absolute inset-0 opacity-20"
