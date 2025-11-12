@@ -80,10 +80,12 @@ export default function HeroSection() {
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+              className="drop-shadow-[0_0_8px_rgba(251,191,36,0.8)]"
             >
               <Star className="w-5 h-5 fill-amber-400 text-amber-400" />
             </motion.div>
-            <span className="text-amber-400 font-semibold tracking-wider text-sm md:text-base">
+            <span className="animate-shimmer font-bold tracking-wider text-sm md:text-base"
+                  style={{ textShadow: '0 0 20px rgba(251,191,36,0.6)' }}>
               4.9 STARS · 64 REVIEWS · CA BAR LICENSED ARD00306932
             </span>
           </motion.div>
@@ -96,7 +98,11 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-black leading-none mb-4">
-                <span className="block bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600 bg-clip-text text-transparent">
+                <span className="block animate-shimmer"
+                      style={{ 
+                        textShadow: '0 0 30px rgba(251,191,36,0.8), 0 0 60px rgba(251,191,36,0.4), 0 4px 8px rgba(0,0,0,0.9)',
+                        filter: 'drop-shadow(0 0 20px rgba(251,191,36,0.5))'
+                      }}>
                   AUTOMOTIVE
                 </span>
               </h1>
@@ -108,7 +114,11 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-black leading-none mb-4">
-                <span className="block bg-gradient-to-r from-white via-zinc-100 to-zinc-300 bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-r from-white via-zinc-100 to-zinc-300 bg-clip-text text-transparent"
+                      style={{ 
+                        textShadow: '0 2px 10px rgba(255,255,255,0.2), 0 4px 20px rgba(0,0,0,0.8)',
+                        filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.9))'
+                      }}>
                   EXCELLENCE
                 </span>
               </h1>
@@ -120,7 +130,11 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.8 }}
             >
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-black">
-                <span className="block bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
+                <span className="block animate-shimmer"
+                      style={{ 
+                        textShadow: '0 0 30px rgba(251,191,36,0.9), 0 0 60px rgba(251,191,36,0.5), 0 4px 8px rgba(0,0,0,0.9)',
+                        filter: 'drop-shadow(0 0 25px rgba(251,191,36,0.6))'
+                      }}>
                   REDEFINED
                 </span>
               </h1>
@@ -132,11 +146,14 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.2 }}
-            className="text-xl md:text-2xl lg:text-3xl text-zinc-300 mb-12 max-w-4xl mx-auto font-light leading-relaxed"
+            className="text-xl md:text-2xl lg:text-3xl mb-12 max-w-4xl mx-auto font-light leading-relaxed"
           >
-            Where million-dollar restorations meet white-glove service.
+            <span className="text-zinc-300" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8)' }}>
+              Where million-dollar restorations meet white-glove service.
+            </span>
             <br />
-            <span className="text-amber-400 font-medium">
+            <span className="animate-shimmer font-semibold"
+                  style={{ textShadow: '0 0 20px rgba(251,191,36,0.7), 0 0 40px rgba(251,191,36,0.3)' }}>
               The Coachella Valley's only CA BAR licensed luxury facility.
             </span>
           </motion.p>
@@ -188,35 +205,35 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.6 }}
-            className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm text-zinc-500"
+            className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm text-zinc-400"
           >
             <motion.div 
-              className="flex items-center space-x-2"
-              whileHover={{ scale: 1.1, color: '#f59e0b' }}
+              className="flex items-center space-x-2 group cursor-pointer"
+              whileHover={{ scale: 1.1 }}
             >
-              <BadgeCheck className="w-5 h-5 text-amber-400" />
-              <span>CA BAR Licensed</span>
+              <BadgeCheck className="w-5 h-5 text-amber-400 drop-shadow-[0_0_6px_rgba(251,191,36,0.6)] group-hover:drop-shadow-[0_0_12px_rgba(251,191,36,0.9)]" />
+              <span className="group-hover:text-amber-400 transition-colors" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>CA BAR Licensed</span>
             </motion.div>
             <motion.div 
-              className="flex items-center space-x-2"
-              whileHover={{ scale: 1.1, color: '#f59e0b' }}
+              className="flex items-center space-x-2 group cursor-pointer"
+              whileHover={{ scale: 1.1 }}
             >
-              <Shield className="w-5 h-5 text-amber-400" />
-              <span>Lifetime Warranty</span>
+              <Shield className="w-5 h-5 text-amber-400 drop-shadow-[0_0_6px_rgba(251,191,36,0.6)] group-hover:drop-shadow-[0_0_12px_rgba(251,191,36,0.9)]" />
+              <span className="group-hover:text-amber-400 transition-colors" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>Lifetime Warranty</span>
             </motion.div>
             <motion.div 
-              className="flex items-center space-x-2"
-              whileHover={{ scale: 1.1, color: '#f59e0b' }}
+              className="flex items-center space-x-2 group cursor-pointer"
+              whileHover={{ scale: 1.1 }}
             >
-              <Award className="w-5 h-5 text-amber-400" />
-              <span>ASE Certified</span>
+              <Award className="w-5 h-5 text-amber-400 drop-shadow-[0_0_6px_rgba(251,191,36,0.6)] group-hover:drop-shadow-[0_0_12px_rgba(251,191,36,0.9)]" />
+              <span className="group-hover:text-amber-400 transition-colors" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>ASE Certified</span>
             </motion.div>
             <motion.div 
-              className="flex items-center space-x-2"
-              whileHover={{ scale: 1.1, color: '#f59e0b' }}
+              className="flex items-center space-x-2 group cursor-pointer"
+              whileHover={{ scale: 1.1 }}
             >
-              <Sparkles className="w-5 h-5 text-amber-400" />
-              <span>White Glove Service</span>
+              <Sparkles className="w-5 h-5 text-amber-400 drop-shadow-[0_0_6px_rgba(251,191,36,0.6)] group-hover:drop-shadow-[0_0_12px_rgba(251,191,36,0.9)]" />
+              <span className="group-hover:text-amber-400 transition-colors" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>White Glove Service</span>
             </motion.div>
           </motion.div>
         </div>

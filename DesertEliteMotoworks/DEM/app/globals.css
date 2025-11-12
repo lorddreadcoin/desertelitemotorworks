@@ -34,3 +34,38 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #f59e0b;
 }
+
+/* Shimmer animation for gold text */
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    #fbbf24 0%,
+    #fcd34d 25%,
+    #fef3c7 50%,
+    #fcd34d 75%,
+    #fbbf24 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Gold glow effect */
+.gold-glow {
+  text-shadow: 
+    0 0 10px rgba(251, 191, 36, 0.8),
+    0 0 20px rgba(251, 191, 36, 0.6),
+    0 0 30px rgba(251, 191, 36, 0.4),
+    0 0 40px rgba(251, 191, 36, 0.2);
+}

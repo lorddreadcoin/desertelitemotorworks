@@ -12,24 +12,35 @@ export default function DesertEliteMotorworks() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
-      <nav className="fixed w-full z-50 bg-black/95 backdrop-blur-md py-4 border-b border-zinc-800">
+      <nav className="fixed w-full z-50 bg-black/95 backdrop-blur-md py-4 border-b border-zinc-800 shadow-2xl shadow-black/50">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <img 
               src="/images/logo.png" 
               alt="Desert Elite Motorworks" 
-              className="w-12 h-12 object-contain"
+              className="w-12 h-12 object-contain drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]"
             />
             <div>
-              <div className="text-lg font-bold">DESERT ELITE</div>
-              <div className="text-xs text-amber-400 tracking-widest">MOTORWORKS</div>
+              <div className="text-lg font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" 
+                   style={{ textShadow: '0 2px 8px rgba(255,255,255,0.1), 0 4px 16px rgba(0,0,0,0.9)' }}>
+                DESERT ELITE
+              </div>
+              <div className="text-xs tracking-widest font-semibold bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent animate-shimmer"
+                   style={{ 
+                     textShadow: '0 0 20px rgba(251,191,36,0.5), 0 0 40px rgba(251,191,36,0.3)',
+                     backgroundSize: '200% auto',
+                     animation: 'shimmer 3s linear infinite'
+                   }}>
+                MOTORWORKS
+              </div>
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-6 text-sm">
-            <a href="#services" className="hover:text-amber-400 transition-colors">Services</a>
-            <a href="#credentials" className="hover:text-amber-400 transition-colors">Credentials</a>
-            <a href="#reviews" className="hover:text-amber-400 transition-colors">Reviews</a>
-            <a href="tel:+17608998244" className="bg-amber-500 hover:bg-amber-600 text-black px-6 py-2 rounded-full font-semibold transition-all">
+            <a href="#services" className="hover:text-amber-400 transition-all font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">Services</a>
+            <a href="#credentials" className="hover:text-amber-400 transition-all font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">Credentials</a>
+            <a href="#reviews" className="hover:text-amber-400 transition-all font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">Reviews</a>
+            <a href="tel:+17608998244" className="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 hover:to-amber-700 text-black px-6 py-2 rounded-full font-bold transition-all shadow-lg shadow-amber-500/50 hover:shadow-xl hover:shadow-amber-500/70 hover:scale-105"
+               style={{ textShadow: '0 1px 2px rgba(0,0,0,0.3)' }}>
               (760) 899-8244
             </a>
           </div>
