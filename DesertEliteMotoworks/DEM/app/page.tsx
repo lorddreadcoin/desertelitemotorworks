@@ -55,49 +55,79 @@ export default function DesertEliteMotorworks() {
       {/* Animated Stats - NEW */}
       <AnimatedStats />
 
-      {/* Before/After Projects - NEW */}
+      {/* Before/After Projects - REAL DESERT ELITE MOTORWORKS PROJECTS */}
       <section id="projects" className="py-32 bg-zinc-950">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
-            <p className="text-amber-400 text-sm font-semibold tracking-widest mb-4">TRANSFORMATIONS</p>
+            <p className="text-amber-400 text-sm font-semibold tracking-widest mb-4">OUR WORK</p>
             <h2 className="text-5xl md:text-6xl font-bold mb-6">
               <span className="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
                 Witness The Transformation
               </span>
             </h2>
             <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
-              From forgotten classics to concours-worthy masterpieces
+              Real projects, real results. From forgotten classics to concours-worthy masterpieces.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 mb-8">
+            {/* Project 1: 1970 Porsche 911 */}
             <BeforeAfterSlider
-              before="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=800&q=80"
-              after="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80"
-              title="1973 Porsche 911 Carrera"
-              description="Complete frame-off restoration with period-correct details"
+              before="/projects/porsche-911/before.jpg"
+              after="/projects/porsche-911/after.jpg"
+              title="1970 Porsche 911"
+              description="Complete restoration to original specifications"
             />
+            
+            {/* Project 2: 1967 Ford Mustang Fastback */}
             <BeforeAfterSlider
-              before="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800&q=80"
-              after="https://images.unsplash.com/photo-1494905998402-395d579af36f?w=800&q=80"
+              before="/projects/mustang-fastback/before.jpg"
+              after="/projects/mustang-fastback/after.png"
               title="1967 Ford Mustang Fastback"
-              description="Engine rebuild and suspension upgrade"
+              description="Frame-off restoration with period-correct details"
             />
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
+            {/* Project 3: 1977 Chevrolet Camaro SS */}
             <BeforeAfterSlider
-              before="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80"
-              after="https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80"
-              title="1969 Chevrolet Camaro SS"
-              description="Full restoration with modern performance upgrades"
+              before="/projects/camaro-ss/before.jpg"
+              after="/projects/camaro-ss/after.png"
+              title="1977 Chevrolet Camaro SS"
+              description="Complete restoration with modern performance upgrades"
             />
+            
+            {/* Project 4: 1969 Ford Bronco */}
             <BeforeAfterSlider
-              before="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80"
-              after="https://images.unsplash.com/photo-1580414057403-c5f451f30740?w=800&q=80"
-              title="1965 Mercedes-Benz 230SL"
-              description="Restomod conversion with modern amenities"
+              before="/projects/ford-bronco/before.jpg"
+              after="/projects/ford-bronco/after.png"
+              title="1969 Ford Bronco"
+              description="Full frame-off restoration and modernization"
             />
+          </div>
+
+          {/* Call to Action */}
+          <div className="mt-16 text-center">
+            <p className="text-zinc-400 mb-6 text-lg">
+              Ready to restore your classic? Let's discuss your project.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href="tel:+17608998244"
+                className="inline-flex items-center space-x-2 px-10 py-4 bg-amber-500 hover:bg-amber-600 
+                           text-black font-bold rounded-full transition-all shadow-lg shadow-amber-500/50"
+              >
+                <span>Schedule Consultation</span>
+                <span className="font-normal">(760) 899-8244</span>
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center space-x-2 px-10 py-4 border-2 border-zinc-700 
+                           hover:border-amber-500 rounded-full font-semibold transition-all"
+              >
+                <span>Request a Quote</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
